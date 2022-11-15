@@ -20,7 +20,7 @@ class LinkedList{
 		
 		ListNode newNode = new ListNode(data);
 		
-		if (head == null) {
+		if (head == null) {		// 첫 번째 로드: head
 			this.head = newNode;
 		}
 		else {
@@ -92,7 +92,7 @@ class LinkedList{
 	public void printList() {
 		
 		ListNode temp = this.head;
-		System.out.printf("L = (");
+		System.out.printf("└→ = (");
 		
 		while (temp != null) {
 			System.out.printf(temp.getData());
